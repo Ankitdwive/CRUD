@@ -1,0 +1,25 @@
+.ak{
+    width: 550px;
+    height: auto;
+    text-align: center;
+    background-color: darkcyan;
+    position: fixed;
+}
+.card{
+    margin-left: 450px;
+    margin-top: 40px;
+}
+
+  .mk{
+    width: 900px;
+    height: auto;
+    text-align: center;
+    background-color: darkkhaki;
+    color:black;
+    position: fixed;
+  }
+  table, th, td {
+    border: 1px solid;
+    background-color: coral;
+    color:white
+  }

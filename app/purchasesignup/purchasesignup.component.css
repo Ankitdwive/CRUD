@@ -1,0 +1,16 @@
+.card{
+    background-color:darkseagreen;
+    width: 600px;
+    height: auto;
+    color:black;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+.container{
+     margin-top: 40px;
+}
+.mohafiz{
+    position: fixed;
+}
+

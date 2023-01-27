@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container"><h1>hello</h1>
+    <form [formGroup]="formvalue" (ngSubmit)="addData()">
+        <dt>Name</dt>
+           <dd> <input type="text" formControlName="name" name="name" class="formcontrol"></dd>
+        
+        <dt>Address</dt>
+            <input type="text" formControlName="address" name="name" class="formcontrol">
+        
+            <dt>Mobile</dt>
+            <input type="text" formControlName="mobile" name="name" class="formcontrol">
+        
+            <dt>Email</dt>
+            <input type="text" formControlName="email" name="name" class="formcontrol">
+        
+            <dt>Password</dt>
+            <input type="text" formControlName="password" name="name" class="formcontrol">
+        <button>submit</button>
+    </form>
+</div>

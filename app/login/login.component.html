@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+
+
+  
+<div class="container">
+      <div class="row">
+        <div class="col-md-6"><br>
+         <div class="card">
+            <div class="text-center">
+              <h1> Login </h1>
+              <h5>Seller login </h5>
+              <hr>
+            </div><form [formGroup]="frm" (ngSubmit)="Login()">
+              <div class="mb-3">
+                <label class="form-label">name</label>
+                <input formControlName="name" type="name" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="text-align:center; margin-left: 190px; margin-top: 20px;">Submit</button>
+              <a routerLink="/sign" style="color:black">signup</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>   
+    
+
+
+
+

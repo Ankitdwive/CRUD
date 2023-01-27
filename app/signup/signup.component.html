@@ -1,0 +1,43 @@
+<app-header></app-header><br><br><br><br><div>
+
+
+<div class="container ankit">
+        
+        
+
+ <div class="card">
+            <div class="text-center">
+                <h2>Signup Seller</h2><br><br>
+            </div>
+            <hr>
+            <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+                <dt>*Name</dt>
+                <input type="text" name="name" placeholder="enter a name" class="form-control" formControlName="name">
+                <div *ngIf="submitted && f['name'].errors?.['required']" style="color:white">*Name is required</div>
+
+                <dt>*Address</dt>
+                <input type="text" name="address" placeholder="enter a address" class="form-control" formControlName="address">
+                <div *ngIf="submitted && f['address'].errors?.['required']" style="color:white">*Address is required</div>
+
+                <dt>*MobNumber</dt>
+                <input type="text" name="mobile" class="form-control" placeholder="enter a mobile number" formControlName="mobile" maxlength="10"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                <div *ngIf="submitted && f['mobile'].errors?.['required']" style="color:white">*MobNumber is required</div>
+
+                <dt>*Email</dt>
+                <input type="text" name="email" class="form-control" placeholder="enter a email" formControlName="email">
+                <div *ngIf="submitted && f['email'].errors?.['required']"style="color:white">*Email is required</div>
+
+                <dt>*Password</dt>
+                <input type="text" name=password class="form-control" placeholder="enter a password" formControlName="password">
+                <div *ngIf="submitted && f['password'].errors?.['required']" style="color:white">*Password is required</div>
+
+
+                <button style="text-align:center; margin-left: 210px; margin-top: 20px;">submit</button>
+                <a routerLink="/login">Login?</a>
+
+            </form>
+        </div>
+    </div>
+
+</div>

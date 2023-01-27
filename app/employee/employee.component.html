@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="container-fluid"><br><br>
+    <div class="row" style="margin-top:35px;">
+
+        
+
+            <div class="card" style="width:200px;">
+                <div class="ak">
+                    <form [formGroup]="frm" (ngSubmit)="AddData()">
+                        <h2>Seller Land Registation</h2>
+                        <dt>Name</dt>
+                        <input type="text" placeholder="Enter Name" name="name" class="form-control"  required formControlName="name">
+                        <dt>Address</dt>
+                        <input type="text" placeholder="Enter address" name="address" class="form-control" formControlName="address">
+                        <dt>Mobile</dt>
+                        <input type="text" placeholder="Enter mobile" name="mobile" class="form-control" formControlName="mobile">
+                        <dt>Email</dt>
+                        <input type="email" placeholder="Enter email" name="email" class="form-control" formControlName="email">
+                        <dt>City</dt>
+                        <select class="form-control" placeholder="Enter Name" formControlName="city">
+                            <option placeholder="Enter City"></option>
+                            <option name="city">DELHI</option>
+                            <option name="city">MUMBAI</option>
+                            <option name="city">SURAT</option>
+                            <option name="city">MP</option>
+                            <option name="city">Hyd</option><option name="city">Bangluru</option><option name="city">UP</option><option name="city">BIHAR</option>
+                        </select>
+                        <dt>Password</dt>
+                        <input placeholder="Enter password" class="form-control" type="password" name="password" formControlName="password"><br><br>
+                        <button  class="btn btn-primary">Submit</button>
+
+                    </form>
+                </div>
+            
+        </div></div></div>
+
+        <!--<div class="col-sm-8">
+            <div class="mk">
+                <div class="card">
+                    <table>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Password</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr *ngFor="let item of alldata">
+                            <td>{{item.id}}</td>
+                            <td>{{item.name}}</td>
+
+                            <td>{{item.address}}</td>
+
+                            <td>{{item.email}}</td>
+                            <td>{{item.mobile}}</td>
+                            <td>{{item.password}}</td>
+                            <td><button type="button" (click)="DeleteData(item.id)">delete</button>
+                                <button type="button" (click)="onedit(item)">edit</button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-dooter></app-dooter>-->

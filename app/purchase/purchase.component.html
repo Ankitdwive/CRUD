@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="container-fluid"><br><br>
+    <div class="row" style="margin-top:35px;">
+
+        
+
+            <div class="card" style="width:200px;">
+                <div class="ak">
+                    <form [formGroup]="frm" (ngSubmit)="AddData()">
+                        <h2>Purchase Land Registation</h2>
+                        <dt>Name</dt>
+                        <input type="text" placeholder="Enter Name" name="name" class="form-control"  required formControlName="name">
+                        <div *ngIf="submitted && f['name'].errors?.['required']">First Name is required</div>
+
+                        <dt>Address</dt>
+                        <input type="text" placeholder="Enter address" name="address" class="form-control" formControlName="address">
+                        <div *ngIf="submitted && f['address'].errors?.['required']">address is required</div>
+
+                        <dt>Mobile</dt>
+                        <input type="text" placeholder="Enter mobile" name="mobile" class="form-control" formControlName="mobile">
+                        <div *ngIf="submitted && f['mobile'].errors?.['required']">mobile no is required</div>
+
+                        <dt>Email</dt>
+                        <input type="email" placeholder="Enter email" name="email" class="form-control" formControlName="email">
+                        <div *ngIf="submitted && f['email'].errors?.['required']">email Name is required</div>
+
+                        <dt>City</dt>
+                        <select class="form-control" placeholder="Enter Name" formControlName="city">
+                            <option placeholder="Enter City"></option>
+                            <option name="city">DELHI</option>
+                            <option name="city">MUMBAI</option>
+                            <option name="city">SURAT</option>
+                            <option name="city">MP</option>
+                            <option name="city">Hyd</option><option name="city">Bangluru</option><option name="city">UP</option><option name="city">BIHAR</option>
+                        </select>
+                        <div *ngIf="submitted && f['city'].errors?.['required']">city Name is required</div>
+
+                        <dt>Password</dt>
+                        <input placeholder="Enter password" class="form-control" type="password" name="password" formControlName="password"><br><br>
+                        <div *ngIf="submitted && f['password'].errors?.['required']">password Name is required</div>
+
+                        <button  class="btn btn-primary">Submit</button>
+
+                    </form>
+                </div>
+            
+        </div></div></div>

@@ -1,0 +1,64 @@
+<app-header></app-header><br><br><br>
+
+<div class="container-fluid">
+    <div class="card">
+        <h2>Land Purchase Detail</h2>
+    <table>
+        <tr><th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mob</th>
+            <th>Email</th>
+            <th>city</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let data of alldat">
+            <td>{{data.id}}</td>
+       <td>{{data.name}}</td>
+       <td>{{data.address}}</td>
+       <td>{{data.mobile}}</td>
+       <td>{{data.email}}</td>
+<td>{{data.city}}</td>
+       <td>{{data.password}}</td>
+       <td><button type="button" (click)="DeleteDataa(data.id)">delete</button>
+        <button type="button" (click)="onedit(data)">edit</button>
+    </td>
+        </tr>
+    </table>
+    </div>
+</div>
+<br><br>
+<div class="mk">
+   
+    <div class="card"> <h2>Land Seller Detail</h2>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Mobile</th>                <th>City</th>
+                <th>Password</th>
+                <th>Action</th>
+
+            </tr>
+            <tr *ngFor="let item of alldata">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+
+                <td>{{item.address}}</td>
+
+                <td>{{item.email}}</td>
+                <td>{{item.mobile}}</td>       <td>{{item.city}}</td>
+                <td>{{item.password}}</td>
+                <td><button type="button" (click)="DeleteData(item.id)">delete</button>
+                    <button type="button" (click)="onedit(item)">edit</button>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+</div>
+<app-dooter></app-dooter>
